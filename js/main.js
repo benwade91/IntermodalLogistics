@@ -34,7 +34,7 @@ window.addEventListener('scroll', () => {
 
 emailForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const email = 'mailto:email@email.com' + `?subject=${emailSubject.value}` + `&body=${emailBody.value}`;
+    const email = 'mailto:Dispatch@intermodalogistics.net' + `?subject=${emailSubject.value}` + `&body=${emailBody.value}`;
     window.open(email);
 }
 );
