@@ -19,14 +19,6 @@ body {
   scroll-behavior: smooth;
 }
 
-/* limits max width of page for larger screens */
-.max-width-container {
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .nav-transparent {
   background-color: white;
   box-shadow: none;
@@ -161,7 +153,23 @@ nav {
 
 section {
   min-height: 100vh;
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  }
 }
