@@ -3,7 +3,9 @@ const nav = document.querySelector('#navbar');
 const mobileNavButton = document.querySelector('#mobile-menu-button');
 const mobileMenu = document.querySelector('.mobile-menu-list');
 let mobileMenuOpen = false;
-
+const emailForm = document.querySelector('#email-form');
+const emailSubject = document.querySelector('#subject');
+const emailBody = document.querySelector('#body');
 
 mobileNavButton.addEventListener('click', () => {
     if (mobileMenuOpen) {
@@ -29,3 +31,10 @@ window.addEventListener('scroll', () => {
         mobileMenuOpen = false;
     }
 });
+
+emailForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = 'mailto:email@email.com' + `?subject=${emailSubject.value}` + `&body=${emailBody.value}`;
+    window.open(email);
+}
+);
